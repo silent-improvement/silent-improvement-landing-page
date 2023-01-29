@@ -1,7 +1,7 @@
 {
   "name": "silent-improvement-webpage",
   "version": "1.0.0",
-  "description": "Creating a webpage for my 'Silent Improvement' project. That's all.",
+  "description": "Creating a webpage for my 'Silent Improvement' project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
