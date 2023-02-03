@@ -14,49 +14,93 @@
 </head>   
 <body>
     <div class="page-container">
-        <div class="page-container__wrapper">
-            <header class="header">
-                <div class="header__logo-title-wrapper">
-                    <img src="/assets/logo.png" class="header__logo" alt="Silent Improvement Logo">
-                    </img>
-                    <h3 class="header__title">
-                        Silent Improvement
-                    </h3>
-                </div>
-                <div class="header__header-menu-wrapper">
-                    <ul class="header__header-menu">
-                        <li class="header__menu-items"><a href="#home">Home</a></li>
-                        <li class="header__menu-items"><a href="#about">About</a></li>
-                        <li class="header__menu-items"><a href="#contact">Contact</a></li>
-                        <div class="header__header-accordion">
-                            <button class="header__menu-items">More</span>
+        <header class="header">
+            <div class="header__logo-title-wrapper">
+                <img src="/assets/logo.png" class="header__logo" alt="Silent Improvement Logo">
+                </img>
+                <h3 class="header__title">
+                    Silent Improvement
+                </h3>
+            </div>
+            <div class="header__header-menu-wrapper">
+                <ul class="header__header-menu">
+                    <li class="header__menu-items"><a href="#home">Home</a></li>
+                    <li class="header__menu-items"><a href="#about">About</a></li>
+                    <li class="header__menu-items"><a href="#contact">Contact</a></li>
+                    <div class="header__menu-accordion">    
+                        <button class="header__menu-items" onclick="accordionOnClick()">More
+                            <svg aria-hidden="true" class="header__menu-chev" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="chevron">
+                                <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="header__more-accordion" style="display: none">
+                            <ul class="header__accordion-menu">
+                                <li class="header__accordion-items"><a href='#resources'>Resources</a></li>
+                                <li class="header__accordion-items"><a href='#study-methodology'>Study Tips</a></li>
+                                <li class="header__accordion-items"><a href='#study-methodology'>Website Updates</a></li>
+                                <li class="header__accordion-items"><a href='#language-acquisition'>Web Development</a></li>
+                            </ul>
                         </div>
-                    </ul>
-                </div>
-            </header>
-    
-            <div class="content">
-                <header class="content__header">Your first step to bettering yourself</header>
-                <div class="content__content">
-                    <span>
-                        To whom this may concern:
-                    </span>
-                    <p class="content__quote">
-                        "You have made the leap to improve yourself, whether it's financial, career-wise, or simply building better habits.
-                        This is a landing page of collated resources and advice that have aided me in pursuing a greater version of myself.
-                        I hope it can be of help, for these things have helped me to strive for greatness."
-                    </p>    
-                    <span>
-                        - Silent Improvement
-                    </span>
-                </div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <header class="content__header">Your first step to bettering yourself</header>
+            <div class="content__content">
+                <span>
+                    To whom this may concern:
+                </span>
+                <p class="content__quote">
+                    "You have made the leap to improve yourself, whether it's financial, career-wise, or simply building better habits.
+                    This is a landing page of collated resources and advice that have aided me in pursuing a greater version of myself.
+                    I hope it can be of help, for these things have helped me to strive for greatness."
+                </p>    
+                <span>
+                    - Silent Improvement
+                </span>
+            </div>
+            <div class="content__button-wrapper">
                 <button class="content__expand-button">Click here for more info</button>
+            </div>
+            <div class="card-button">
+                <a href="#" class="card-button__items">
+                    <div class="card-button__item-content">
+                        <img src="https://www.citypng.com/public/uploads/preview/-51609516149nowldl3ocn.png" class="card-button__image"></img>
+                        <div class="card-button__content-wrapper">
+                            <span class="card-button__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt orci vitae est scelerisque, nec suscipit urna viverra.
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-button__items">
+                    <div class="card-button__item-content">
+                        <img src="https://www.citypng.com/public/uploads/preview/-51609516149nowldl3ocn.png" class="card-button__image"></img>
+                        <div class="card-button__content-wrapper">
+                            <span class="card-button__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt orci vitae est scelerisque, nec suscipit urna viverra.
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-button__items">
+                    <div class="card-button__item-content">
+                        <img src="https://www.citypng.com/public/uploads/preview/-51609516149nowldl3ocn.png" class="card-button__image"></img>
+                        <div class="card-button__content-wrapper">
+                            <span class="card-button__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt orci vitae est scelerisque, nec suscipit urna viverra.
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="footer">
             <div class="footer__social-media">
-                <a href="https://www.tiktok.com/@silent_improvement"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/silent__improvement/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@silent_improvement" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/silent__improvement/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-youtube"></i>

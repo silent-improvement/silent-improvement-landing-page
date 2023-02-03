@@ -1,33 +1,24 @@
-html {
-    background-color: #342E2D;
-}
-
 .page-container {
     background-color: #342E2D;
     width: 100%;
-    height: 100vh;
-
-    &__wrapper {
-        margin: auto;
-        padding: 1rem 0;
-        width: 90%;
-        height: 90vh;
-    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
-    width: 100%;
-    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fafafa;
+    margin: 2rem 6rem;
 
     &__logo-title-wrapper{
-        margin: 0 2rem;
+        margin-left: 5rem;
         display: flex;
         align-items: center;
-        width: 50%;
+        width: 60%;
         height: 100%;
     }
     &__logo {
@@ -49,17 +40,21 @@ html {
     }
 
     &__header-menu-wrapper {
-        width: 30%;
+        width: 40%;
+        height: 100%;
+        margin-right: 5rem;
     }
     &__header-menu {
         font-family: 'PT Sans', sans-serif;
         font-size: 1.25rem;
         list-style-type: none;
-        height: 3rem;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #fafafa;
+        margin: 0;
+        padding: 0;
         
     }
     &__menu-items {
@@ -68,49 +63,86 @@ html {
         background: none;
         font-family: 'PT Sans', sans-serif;
         font-size: 1.25rem;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
-
-        &:hover {
-            color: #d89026;
-            transition: all .5s ease;
-            -webkit-transition: all .5s ease;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__menu-items a{
         color:#fafafa;
         text-decoration: none;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         &:hover {
-            color: #d89026;
-            transition: all .5s ease;
-            -webkit-transition: all .5s ease;
+            color:#d89026;
         }
     }
-    &__header-accordion {
-        
+
+    &__menu-chev {
+        width: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 3rem;
+        fill: white;
+    }
+    &__menu-accordion > button{
+        transition: transform .5s ease;
+        &:hover svg, &:hover {
+            transition: transform .5s ease;
+            fill: #d89026;
+            color: #d89026;
+        }
+    }
+
+    &__more-accordion {
+        margin-top: 1rem;
+        width: 10rem;
+        height: 15rem;
+        border: 4px solid #fafafa;
+        border-radius: 0.5rem;
+        position: absolute;
+        padding: 0.5rem;
+    }
+
+    &__accordion-menu{
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        height: 100%;
+        padding: 0;
+    }
+    &__accordion-items a{
+        text-decoration: none;
+        color:#fafafa;
+        transition: all .2s ease;
+
+        &:hover {
+            transition: all .2s ease;
+            color: #d89026;
+        }
     }
 }
 
 .content {
     width: 75%;
-    height: 75%;
     margin: auto;
-    border-radius: 0.5rem;
+    padding: 5rem 0;
     color: #fafafa;
     display: flex;
     align-items: center;
     flex-direction: column;
 
     &__header {
+        width: 100%;
+        text-align: center;
         font-size: 3rem;
         font-family: 'Montserrat 600', sans-serif;
-        padding-top: 4rem;
     }
     &__content {
-        padding: 3rem 5rem 2rem 5rem;
+        padding: 4rem 10rem 5rem 10rem;
         text-align: center;
         font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
         font-size: 1rem;
@@ -120,8 +152,15 @@ html {
         font-style: italic;
         font-family: "Gotham Italic 600", sans-serif;
     }
+
+    &__button-wrapper {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__expand-button {
-        margin-top: 4rem;
         font-family: 'Montserrat 600', sans-serif;
         background: #d89026;
         color: #fafafa;
@@ -129,7 +168,7 @@ html {
         border-radius: 0.5rem;
         border: none;
         width: 15rem;
-        height: 6rem;
+        height: 100%;
         transition: all .5s ease;
         -webkit-transition: all .5s ease;
 
@@ -143,31 +182,58 @@ html {
     }
 }
 
+.card-button {
+    width: 75%;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 8rem;
+    margin: 9rem 0;
+    &__items{
+        height: 96%;
+        border-radius: 0.5rem;
+        background-color: #e4e5e8;
+        border-top: 1rem solid #d89026;
+        text-decoration: none;
+    }
+    &__image {
+        max-width: 100%;
+    }
+    &__content-wrapper {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    &__content {
+        font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+        color:#342E2D;
+        
+        &:hover {
+            color: #d89026;
+        }
+    }
+}
+
 .footer {
     background-color: #f5debb;
     width: 100%;
-    height: 17rem;
 
     &__social-media {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        height: 3rem;
-        padding-top: 3rem;
-        margin:auto;
+        margin: 10rem 15rem 10rem 15rem;
     }
 }
 
 .fa-brands {
-    padding-right: 2rem;
     color: #342E2D;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     
     &:hover {
         color: #d89026;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
         transform: scale(1.2);
     }
 }
