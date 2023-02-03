@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .page-container {
     background-color: #342E2D;
     width: 100%;
@@ -127,7 +131,6 @@
 }
 
 .content {
-    width: 75%;
     margin: auto;
     padding: 5rem 0;
     color: #fafafa;
