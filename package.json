@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server",
-    "watch": "node-sass ./scss/styling.scss ./css/styling.css --output-style compressed -w"
+    "watch": "node-sass ./scss/main.scss ./css/styling.css --output-style compressed -w"
   },
   "author": "Lance Edwards",
   "license": "ISC",

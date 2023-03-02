@@ -1,0 +1,11 @@
+.footer {
+  background-color: #f5debb;
+  width: 100%;
+
+  &__social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 15rem 10rem 15rem;
+  }
+}

@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fafafa;
+  margin: 2rem 6rem;
+
+  &__logo-title-wrapper {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+  }
+  &__logo {
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    &:hover {
+      transform: rotate(360deg);
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+    }
+  }
+  &__title {
+    font-size: 1.875rem;
+    font-family: "Gotham", sans-serif;
+    text-decoration: none;
+  }
+
+  &__header-menu-wrapper {
+    width: 40%;
+    height: 100%;
+    margin-right: 5rem;
+  }
+  &__header-menu {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.25rem;
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  &__menu-items {
+    color: #fafafa;
+    border: none;
+    background: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu-items a {
+    color: #fafafa;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      color: #d89026;
+    }
+  }
+
+  &__menu-chev {
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+    fill: white;
+  }
+  &__menu-accordion > button {
+    transition: transform 0.5s ease;
+    &:hover svg,
+    &:hover {
+      transition: transform 0.5s ease;
+      fill: #d89026;
+      color: #d89026;
+    }
+  }
+
+  &__more-accordion {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 15rem;
+    border: 4px solid #fafafa;
+    border-radius: 0.5rem;
+    position: absolute;
+    padding: 0.5rem;
+  }
+
+  &__accordion-menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    height: 100%;
+    padding: 0;
+  }
+  &__accordion-items a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transition: all 0.2s ease;
+      color: #d89026;
+    }
+  }
+}
