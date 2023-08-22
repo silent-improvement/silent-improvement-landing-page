@@ -1,9 +1,14 @@
-//components that make up the landing page
+@import "utilities";
+@import "variables";
+
+// Components used in the landing page
+
+@import "components/card-button";
+
+//partials that make up the landing page
 @import "partials/header";
 @import "partials/content";
-@import "partials/card-button";
 @import "partials/footer";
 
 // General .scss files
-@import "general/brands";
 @import "general/container";

@@ -1,0 +1,19 @@
+//Mixins for responsive behaviour
+
+@mixin breakpoint-custom-down($max) {
+  @media all and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm-down {
+  @include breakpoint-custom-down($screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin breakpoint-ml-down {
+  @include breakpoint-custom-down($screen-ml-min) {
+    @content;
+  }
+}

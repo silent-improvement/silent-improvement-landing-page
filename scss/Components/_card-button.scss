@@ -4,6 +4,13 @@
   grid-template-columns: 4fr 4fr 4fr;
   grid-gap: 8rem;
   margin: 9rem 0;
+
+  @include breakpoint-sm-down {
+    width: 70%;
+    grid-template-columns: none;
+    grid-template-rows: 4fr 4fr 4fr;
+  }
+
   &__items {
     height: 96%;
     border-radius: 0.5rem;
@@ -17,7 +24,8 @@
       transform: translateY(-5px);
     }
 
-    &:hover, &:hover svg,
+    &:hover,
+    &:hover svg,
     &:hover span {
       transition: all 0.5s ease;
       color: #d89026;
@@ -26,6 +34,10 @@
     &:hover svg {
       transition: transform 0.5s ease;
       transform: translateX(5px);
+    }
+
+    @include breakpoint-sm-down {
+      height: 90%;
     }
   }
   &__item-content {

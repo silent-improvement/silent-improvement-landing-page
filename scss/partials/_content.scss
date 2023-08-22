@@ -1,22 +1,40 @@
 .content {
   margin: auto;
-  padding: 5rem 0;
+  padding: 8rem 0;
   color: #fafafa;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @include breakpoint-sm-down {
+    width: 100%;
+    padding: 5rem 0;
+  }
 
   &__header {
     width: 100%;
     text-align: center;
     font-size: 3rem;
     font-family: "Montserrat 600", sans-serif;
+
+    @include breakpoint-sm-down {
+      width: 100%;
+      font-size: 2.25rem;
+      padding-bottom: 0.5rem;
+    }
   }
   &__content {
-    padding: 4rem 30rem 5rem 30rem;
+    width: 50%;
+    padding: 4rem 0 5rem 0;
+    margin: auto;
     text-align: center;
     font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
+
+    @include breakpoint-sm-down {
+      padding: 2rem;
+      font-size: 0.8rem;
+    }
   }
   &__quote {
     font-size: 1rem;
@@ -30,10 +48,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-sm-down {
+      padding-top: 4rem;
+    }
   }
   &__expand-button {
     font-family: "Montserrat 600", sans-serif;
-    background: #d89026;
+    background: #9C691C;
     color: #fafafa;
     font-size: 1.1rem;
     border-radius: 0.5rem;
