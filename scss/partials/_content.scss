@@ -1,41 +1,45 @@
 .content {
   margin: auto;
-  padding: 8rem 0;
   color: #fafafa;
   display: flex;
   align-items: center;
   flex-direction: column;
 
+  @include site-container;
+  padding-top: 5rem;
+
   @include breakpoint-sm-down {
-    width: 100%;
-    padding: 5rem 0;
+    @include site-container;
+    padding-top: 5rem;
   }
 
   &__header {
-    width: 100%;
     text-align: center;
     font-size: 3rem;
     font-family: "Montserrat 600", sans-serif;
+    @include site-container;
+    padding-bottom: 3rem;
 
     @include breakpoint-sm-down {
-      width: 100%;
+      @include site-container;
       font-size: 2.25rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 2rem;
+      margin: 0;
     }
   }
+
   &__content {
-    width: 50%;
-    padding: 4rem 0 5rem 0;
-    margin: auto;
     text-align: center;
     font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
+    @include site-container;
+    padding-bottom: 5rem;
 
     @include breakpoint-sm-down {
-      padding: 2rem;
       font-size: 0.8rem;
     }
   }
+
   &__quote {
     font-size: 1rem;
     font-style: italic;
@@ -43,16 +47,17 @@
   }
 
   &__button-wrapper {
-    width: 100%;
     height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @include site-container;
+
+    padding-bottom: 5rem;
 
     @include breakpoint-sm-down {
       padding-top: 4rem;
     }
   }
+
   &__expand-button {
     font-family: "Montserrat 600", sans-serif;
     background: #9C691C;
@@ -71,5 +76,25 @@
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
     }
+  }
+
+  &__about-intro {
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+  &__about-portrait {
+    @include site-container;
+    height: 10rem;
+  }
+
+  &__about-portrait {
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+
+  &__email {
+    margin-top: 3rem;
+    font-size: 1.5rem;
   }
 }

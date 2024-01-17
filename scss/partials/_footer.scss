@@ -1,12 +1,25 @@
+.footer-container {
+  width: 100%;
+  background-color: #f5debb;
+}
+
 .footer {
   background-color: #f5debb;
-  width: 100%;
+
+  @include site-container;
 
   &__social-media {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10rem;
+    @include site-container;
+    padding: 10rem 2rem;
+
+    @include breakpoint-sm-down {
+      flex-direction: column;
+      height: 36rem;
+
+    }
   }
 
   .fa-brands {
@@ -28,7 +41,7 @@
   }
 
   .fa-tiktok,
-  .fa-twitter,
+  .fa-x-twitter,
   .fa-github,
   .fa-pinterest-p,
   .fa-facebook-f {

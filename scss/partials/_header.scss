@@ -3,25 +3,23 @@
   align-items: center;
   justify-content: space-between;
   color: #fafafa;
-  margin: 2rem 6rem;
+
+  @include site-container;
 
   @include breakpoint-sm-down {
+    @include site-container;
     margin: 0;
-    width: 100%;
   }
 
   &__hamburger {
     display: none;
 
     @include breakpoint-sm-down {
-      display: block;
-      border: none;
-      background-color: #342e2d;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      width: 50%;
-      margin-right: 2rem;
+      border: none;
+      background-color: #342e2d;
     }
 
     &:hover {
@@ -56,17 +54,14 @@
   }
 
   &__logo-title-wrapper {
-    margin-left: 5rem;
     display: flex;
     align-items: center;
-    width: 60%;
-    height: 100%;
+    gap: 1rem;
 
     @include breakpoint-sm-down {
       display: flex;
       align-items: center;
       margin-left: 0;
-      width: 100%;
       height: none;
     }
   }
@@ -84,7 +79,7 @@
     }
   }
 
-  &__title {
+  &__title a {
     font-size: 1.875rem;
     font-family: "Gotham", sans-serif;
     text-decoration: none;
@@ -94,16 +89,9 @@
       width: 100%;
       height: 100%;
     }
-  }
 
-  &__header-menu-wrapper {
-    width: 40%;
-    height: 100%;
-    margin-right: 5rem;
-
-    @include breakpoint-sm-down {
-      width: 0;
-      margin-right: 0;
+    &:visited {
+      color: #fafafa;
     }
   }
 
@@ -118,6 +106,7 @@
     color: #fafafa;
     margin: 0;
     padding: 0;
+    gap: 5rem;
 
     @include breakpoint-sm-down {
       display: none;
@@ -208,12 +197,14 @@
 
   &__more-accordion {
     margin-top: 1rem;
-    width: 10rem;
-    height: 15rem;
+    margin-right: 2rem;
     border: 4px solid #fafafa;
     border-radius: 0.5rem;
     position: absolute;
     padding: 0.5rem;
+    height: 11rem;
+    z-index: 1;
+    background-color: #342e2d;
 
     @include breakpoint-sm-down {
       width: 100%;
@@ -221,7 +212,7 @@
       background-color: #342e2d;
       padding: 0.5rem 0.5rem 0.5rem 3rem;
       border-radius: unset;
-      top: 26rem;
+      top: 30rem;
     }
   }
 
@@ -237,6 +228,7 @@
   }
 
   &__accordion-items a {
+    padding-bottom: 3rem;
     text-decoration: none;
     color: #fafafa;
     transition: all 0.2s ease;

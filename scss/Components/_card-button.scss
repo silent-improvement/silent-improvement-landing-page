@@ -1,9 +1,13 @@
 .card-button {
-  width: 75%;
+  max-width: 86rem;
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
-  grid-gap: 8rem;
+  grid-gap: 3rem;
   margin: 9rem 0;
+
+  @include site-container;
+
+  padding-bottom: 5rem;
 
   @include breakpoint-sm-down {
     width: 70%;
@@ -12,7 +16,6 @@
   }
 
   &__items {
-    height: 96%;
     border-radius: 0.5rem;
     background-color: #e4e5e8;
     border-top: 1rem solid #d89026;
@@ -31,6 +34,7 @@
       color: #d89026;
       fill: #d89026;
     }
+
     &:hover svg {
       transition: transform 0.5s ease;
       transform: translateX(5px);
@@ -40,12 +44,15 @@
       height: 90%;
     }
   }
+
   &__item-content {
     height: 100%;
   }
+
   &__image {
     max-width: 100%;
   }
+
   &__content-wrapper {
     max-width: 100%;
     padding: 2rem;
@@ -55,12 +62,14 @@
     transition: all 0.5s ease;
     transition: transform 0.5s ease;
   }
+
   &__content {
     font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     color: #342e2d;
     transition: all 0.5s ease;
     padding-bottom: 2.5rem;
   }
+
   &__image-button-arrow {
     width: 1rem;
     fill: #342e2d;
