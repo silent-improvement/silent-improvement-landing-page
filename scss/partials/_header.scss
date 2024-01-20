@@ -83,6 +83,7 @@
     font-size: 1.875rem;
     font-family: "Gotham", sans-serif;
     text-decoration: none;
+    color: #fafafa;
 
     @include breakpoint-sm-down {
       font-size: 1rem;
