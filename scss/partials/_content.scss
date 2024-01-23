@@ -83,17 +83,19 @@
     font-size: 1.5rem;
   }
 
-  &__about-portrait {
+  &__portrait {
     @include site-container;
     height: 10rem;
-  }
-
-  &__about-portrait {
     border-radius: 50%;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   &__email {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  &__self-statement {
     margin-top: 3rem;
     font-size: 1.5rem;
   }
