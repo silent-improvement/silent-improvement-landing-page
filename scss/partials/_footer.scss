@@ -6,13 +6,13 @@
 .footer {
   background-color: #f5debb;
 
-  @include site-container;
+  @include mid-container;
 
   &__social-media {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include site-container;
+    @include mid-container;
     padding: 10rem 2rem;
 
     @include breakpoint-sm-down {

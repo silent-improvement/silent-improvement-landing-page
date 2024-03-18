@@ -18,8 +18,14 @@
   }
 }
 
-@mixin site-container {
+@mixin breakpoint-lg-down {
+  @include breakpoint-custom-down($screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin mid-container {
   max-width: 1100px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: auto;
 }

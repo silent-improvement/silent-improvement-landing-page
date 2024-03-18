@@ -5,11 +5,11 @@
   align-items: center;
   flex-direction: column;
 
-  @include site-container;
+  @include mid-container;
   padding-top: 5rem;
 
   @include breakpoint-sm-down {
-    @include site-container;
+    @include mid-container;
     padding-top: 5rem;
   }
 
@@ -17,11 +17,11 @@
     text-align: center;
     font-size: 3rem;
     font-family: "Montserrat 600", sans-serif;
-    @include site-container;
+    @include mid-container;
     padding-bottom: 3rem;
 
     @include breakpoint-sm-down {
-      @include site-container;
+      @include mid-container;
       font-size: 2.25rem;
       padding-bottom: 2rem;
       margin: 0;
@@ -32,7 +32,7 @@
     text-align: center;
     font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
-    @include site-container;
+    @include mid-container;
     padding-bottom: 5rem;
 
     @include breakpoint-sm-down {
@@ -49,7 +49,7 @@
   &__button-wrapper {
     height: 6rem;
 
-    @include site-container;
+    @include mid-container;
 
     padding-bottom: 5rem;
 
@@ -84,7 +84,7 @@
   }
 
   &__portrait {
-    @include site-container;
+    @include mid-container;
     height: 10rem;
     border-radius: 50%;
     margin-top: 3rem;

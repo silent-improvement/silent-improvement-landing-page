@@ -4,10 +4,10 @@
   justify-content: space-between;
   color: #fafafa;
 
-  @include site-container;
+  @include mid-container;
 
   @include breakpoint-sm-down {
-    @include site-container;
+    @include mid-container;
     margin: 0;
   }
 
