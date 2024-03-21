@@ -6,13 +6,13 @@
 .footer {
   background-color: #f5debb;
 
-  @include mid-container;
+  @include large-container;
 
   &__social-media {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mid-container;
+    @include large-container;
     padding: 10rem 2rem;
 
     @include breakpoint-sm-down {
@@ -46,11 +46,13 @@
   .fa-pinterest-p,
   .fa-facebook-f {
     font-size: 2rem;
+    padding-bottom: 1rem;
   }
 
   .fa-instagram,
   .fa-youtube {
     font-size: 2.625rem;
+    padding-bottom: 1rem;
   }
 
 }

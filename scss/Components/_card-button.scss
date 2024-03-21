@@ -1,18 +1,16 @@
 .card-button {
-  max-width: 86rem;
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-gap: 3rem;
   margin: 9rem 0;
 
-  @include mid-container;
+  @include large-container;
 
   padding-bottom: 5rem;
 
   @include breakpoint-sm-down {
-    width: 70%;
     grid-template-columns: none;
-    grid-template-rows: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   &__items {
@@ -25,6 +23,11 @@
     &:hover {
       transition: transform 0.5s ease;
       transform: translateY(-5px);
+
+      @include breakpoint-sm-down {
+        transition: none;
+        transform: unset;
+      }
     }
 
     &:hover,
@@ -33,14 +36,30 @@
       transition: all 0.5s ease;
       color: #d89026;
       fill: #d89026;
+
+      @include breakpoint-sm-down {
+        transition: none;
+        transform: unset;
+        &:active {
+          color: #342e2d;
+          fill: #342e2d;
+        }
+      }
     }
 
     &:hover svg {
       transition: transform 0.5s ease;
       transform: translateX(5px);
+
+      @include breakpoint-sm-down {
+        transition: none;
+        transform: unset;
+      }
     }
 
     @include breakpoint-sm-down {
+      transition: none;
+      transform: unset;
       height: 90%;
     }
   }
@@ -61,6 +80,11 @@
     align-items: flex-end;
     transition: all 0.5s ease;
     transition: transform 0.5s ease;
+
+    @include breakpoint-sm-down {
+      transition: none;
+      transform: unset;
+    }
   }
 
   &__content {
@@ -68,6 +92,11 @@
     color: #342e2d;
     transition: all 0.5s ease;
     padding-bottom: 2.5rem;
+
+    @include breakpoint-sm-down {
+      transition: none;
+      transform: unset;
+    }
   }
 
   &__image-button-arrow {
@@ -75,5 +104,10 @@
     fill: #342e2d;
     padding: 1rem;
     transition: all 0.5s ease;
+
+    @include breakpoint-sm-down {
+      transition: none;
+      transform: unset;
+    }
   }
 }

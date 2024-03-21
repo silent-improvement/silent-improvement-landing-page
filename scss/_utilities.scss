@@ -24,8 +24,20 @@
   }
 }
 
-@mixin mid-container {
-  max-width: 1100px;
+@mixin large-container {
+  max-width: $screen-xxl-min;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+@mixin medium-container {
+  max-width: $screen-md-min;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+@mixin small-container {
+  max-width: $screen-sm-min;
   padding: 0 1rem;
   margin: auto;
 }

@@ -4,10 +4,10 @@
   justify-content: space-between;
   color: #fafafa;
 
-  @include mid-container;
+  @include large-container;
 
   @include breakpoint-sm-down {
-    @include mid-container;
+    @include small-container;
     margin: 0;
   }
 
@@ -203,7 +203,6 @@
     border-radius: 0.5rem;
     position: absolute;
     padding: 0.5rem;
-    height: 11rem;
     z-index: 1;
     background-color: #342e2d;
 
@@ -212,8 +211,8 @@
       border: unset;
       background-color: #342e2d;
       padding: 0.5rem 0.5rem 0.5rem 3rem;
+      margin-top: -3rem;
       border-radius: unset;
-      top: 30rem;
     }
   }
 
@@ -224,7 +223,6 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
-    height: 100%;
     padding: 0;
   }
 
